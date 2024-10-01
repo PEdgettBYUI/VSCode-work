@@ -37,6 +37,13 @@ body {
   font-size: 18px;
   text-align: center;
 }
+#active {
+  background-color: #0485db;
+  color: #D4AC0D;
+}
+.gray {
+  background-color: #ccc;
+}
 img {
   display: block;
   margin: 0 auto;
