@@ -36,4 +36,4 @@ payment = float(input("What is the payment amount? $"))
 print(f"Change: ${payment - total:.2f}")
 # Closing Message
 print("\n----------------------------")
-print("Thank you for using the Mealizer900, \nwe hope you have a great day, and enjoy your meal!\n")
+print("Thank you for using the Mealizer900, \nWe hope you have a great day, and enjoy your meal!\n")

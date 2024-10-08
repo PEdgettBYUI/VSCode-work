@@ -1,0 +1,44 @@
+body {
+    background-color:beige;
+    font-size: 24px
+}
+nav, footer {
+    background-color: steelblue;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+a {
+    color: beige
+    padding: 25px;
+    font-size: 24px;
+}
+main a {
+    color: black;
+    font-size: 1em;
+}
+a:hover{
+    background-color: beige;
+    color: steelblue;
+}
+h1 {
+    text-align: center;
+}
+img {
+    width: 30%
+    margin: 0 auto;
+    display:block;
+}
+
+p {
+    width: 70%
+    line-height: 1.25em;
+    margin: 25px auto;
+}
+span{
+    color: steelblue;
+}
+footer p {
+    text-align: center;
+    color: beige;
+}
