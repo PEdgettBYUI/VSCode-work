@@ -1,0 +1,19 @@
+body{
+    text-align: center;
+    background-color: steelblue;
+    color: white;
+}
+
+img{
+    width: 20%;
+}
+
+ol{
+    color: black;
+    width: 50%
+    margin: 0 auto;
+}
+
+footer{
+    color: black;
+}
