@@ -6,8 +6,8 @@ import random
 
 # Introduction
 print("~ Your Tale ~")
-print("Before you lies a tale yet written. You are it's co-author, and your actions dictate it's flow.\
-But this tale is not all-encompassing, you may only impact a few things. Choose your path carefully, for in this tale the consequences are irreversible...\n")
+print("Before you lies a tale yet written. You are it's co-author, and your actions dictate it's flow.")
+print("But this tale is not all-encompassing, you may only impact a few things. Choose your path carefully, for in this tale the consequences are irreversible...\n")
 print("__________________________________________________________________________________________")
 
 # Setting the scene
@@ -236,7 +236,7 @@ if choice == "PAY":
             print("Suddenly, you're pulled to you feet, and the head goblin tries to look tall despite being half your size, as he points towards a log by the fire.")
             print("\"S'it.\" he half-slurs as he gives the command. As you sit, a second goblin scurries toward a horribly worn patchwork bag and begins rooting around for something.")
             print("\"Br'an.\" He croaks trying to explain, \"I'v loy'l, git br'an.\" and looking back past him, you see the second goblin poking a metal stick into the fire, dancing  around the flame.")
-            choice == input("It dawns on you that every goblin has a brand on their cheek, and now you had to decide do you COMMIT and become a member of a goblin tribe? or do you FLEA and hope that they're too distracted to pursue you. ").upper()
+            choice = input("It dawns on you that every goblin has a brand on their cheek, and now you had to decide do you COMMIT and become a member of a goblin tribe? or do you FLEA and hope that they're too distracted to pursue you. ").upper()
             if choice == "COMMIT":
                 print("\nYou shrink as you try to figure out how you got here. But resolute, you wait and watch in resolute-horror as the second goblin walks toward you, and you turn so that he gets your cheek.")
                 print("And so, long after a rumor floats around the surrounding forest that deep within, a man leads a goblin army in the woods. Leaving animal husks, and pillaged carravans along the now disued road.")
@@ -275,17 +275,19 @@ elif choice == "SCRAM":
     if choice == "PROTEST":
         print("\nYou swear to the guard you haven't a penny on you, and that proves you couldn't have robbed the inn.")
         print("\"Yeah, yeah, an' I'll bet if I turned out your purse there'd be not but a fly innit.\" Then he hoists you to your feet and begins to try and cuff you.")
-        choice == input("Will you attempt to RESIST the guard's attempts to arrest you, or GO ALONG with them?")
+        choice = input("Will you attempt to RESIST the guard's attempts to arrest you, or GO ALONG with them? ").upper()
+        print(choice)
         # Continue From Here.
         if choice == "RESIST":
             roll = random.randint(1, 100)
+            print(roll)
             if roll > 50:
                 print("\nTEMPORARY TEXT:")
                 print("You successfully wrestle the guard to the ground, in the scuffle you grab his truncheon and knock him out with it.")
                 print("Realizing how much trouble you'll be in, you decide to leave town.")
                 choice = input("You run south to the back end of town, hoping to find somewhere to hide out in the SLUMS, or sneak out the town SEWERS. ").upper()
                 if choice == "SLUMS":
-                    print("TEMPORARY TEXT:")
+                    print("\nTEMPORARY TEXT:")
                     print("\nYou run, darting through alleys hoping that if you get lost yourself they won't be able to find you either. Soon you come to an abandoned shack.")
                     print("Running inside you are confronted by a street gang and barter to join them in exchange for protection from the law. In the end you become a member of a protection racket.")
                 if choice == "SEWERS":
