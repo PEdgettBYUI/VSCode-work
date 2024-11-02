@@ -7,8 +7,9 @@ secret = "geronimo"
 guess = ""
 count = 0
 
+print("Let's Play Wordo.\n The Secret Word is 8 Letters long\n")
 while guess != secret:
     guess = str(input("What is your guess? ")).lower()
     count = count + 1
 print("You Achieved the guess! What competence!")
-print(f"It took you just {count} guesses.")
+print(f"It took you just {count} guesses.\n")
