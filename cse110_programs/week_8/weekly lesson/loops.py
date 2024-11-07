@@ -1,3 +1,15 @@
+# Week 8 - Loops Part 2
+
+nums = [1, 2, 3, 4]
+
+for num in nums:
+    print(num)
+
+i = 0
+while i < 4:
+    print(nums[i])
+    i += 1
+
 word = "word"
 # letter is a local variable defined within the for loop only
 for letter in word:
