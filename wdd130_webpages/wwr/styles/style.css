@@ -159,7 +159,7 @@ footer{
     background-color: rgba(165, 24, 55, 0.7);
     color: #D38E1D;
     padding: 25px 50px;
-    margin-top: 200px;
+    margin-top: 25px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -234,6 +234,16 @@ main section img {
     grid-row: 1/2;
 }
 
+.faq-intro{
+    padding: 5%;
+}
+.faq-intro h1{
+    margin-left: 10%;
+    font-size: 4rem;
+    display: flex;
+    align-items: start;
+}
+
 #hero-faq{
     display: flex;
     align-items: center;
@@ -255,6 +265,7 @@ main section img {
 }
 
 .faq-hero{
+    margin-top: 80px;
     grid-column: 1/2; 
     grid-row: 3/4;
 }
@@ -264,7 +275,8 @@ main section img {
 
 .faq{
     grid-column: 2/3;
-    grid-row: 2/4;
+    grid-row: 2/5;
+    margin: 50px;
 }
 
 /*NO TOUCHING BELOW THIS POINT OR HE DIE*/
@@ -278,7 +290,7 @@ main section img {
     }
     nav a {
         display: block;
-        padding: 15 px;
+        padding: 15px;
     }
     #hero {
         margin-top: 0;
