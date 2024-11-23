@@ -279,6 +279,27 @@ main section img {
     margin: 50px;
 }
 
+
+/* Contact US */
+form {
+    display: inline-block;
+    /*form outline*/
+    padding: 1em;
+    border: 1px solid #ccc;
+    border-radius: 1em;
+    width: 500px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+p + p {
+    margin-top: 1em;
+}
+
+label {
+    
+}
+
 /*NO TOUCHING BELOW THIS POINT OR HE DIE*/
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
