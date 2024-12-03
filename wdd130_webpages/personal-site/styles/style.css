@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+body{
+    background-color: #FFD1A3ff;
+    font-size: 24px;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 200px auto;
+    background-color: white;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    align-content: stretch;
+    
+}
+
+#banner{
+    text-align: center;
+}
+
+#banner h4{
+    font-size: 18px;
+}
+
+nav a {
+    text-align: center;
+    color: #6D35C6ff;
+    height: 75%;
+    width: 30%;
+    align-self: center;
+    padding-top: 50px;
+}
+
+nav a:hover {
+    background-color: #6D35C6ff;
+    color: #28B5A2ff;
+}
+
+#logo_link {
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+.logo {
+    width: 200px;
+}  
+
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+#article-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    font-size: 14px;
+    margin: auto;
+    justify-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.article-card{
+    border: 5px solid #28B5A2ff;
+    box-shadow: 5px 5px 10px #6f7364;
+    color: #D38E1D;
+}
+
+.article-card p{
+    width: 90%;
+    font-size: 14px;
+    margin: 5px auto;
+}
+
+.article-img{
+    border: 5px solid #FFFFB7ff;
+    box-shadow: 5px 5px 10px #6f7364;
+    color: #D38E1D;
+    width: 90%;
+    margin: 10px auto;
+    display: block;
+}
+
+.topic-essay{
+    margin-left: 100px;
+    margin-right: 100px;
+    grid-row: 3;
+    grid-column: 1;
+}
+
+.topic-essay p{
+    font-size: 18px
+}
+
+footer{
+    background-color: rgba(165, 24, 55, 0.7);
+    color: #D38E1D;
+    padding: 25px 50px;
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+footer a {
+    color: #D38E1D;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #D38E1D;
+}
+footer p {
+    font-size: 0.8em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}

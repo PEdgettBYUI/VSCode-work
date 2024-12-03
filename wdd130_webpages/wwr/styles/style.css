@@ -281,7 +281,6 @@ main section img {
 
 
 /* Contact US */
-<<<<<<< HEAD
 body {
     /* Center the form on the page */
     text-align: center;
@@ -356,25 +355,6 @@ body {
 }
 .moveDown {
     margin-top: 3em;
-=======
-form {
-    display: inline-block;
-    /*form outline*/
-    padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
-    width: 500px;
-    margin: 80px auto;
-    text-align: center;
-}
-
-p + p {
-    margin-top: 1em;
-}
-
-label {
-    
->>>>>>> 04c5fbe9cca57961dd1125b6912c6bc318f4d6a9
 }
 
 /*NO TOUCHING BELOW THIS POINT OR HE DIE*/
