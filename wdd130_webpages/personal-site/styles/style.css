@@ -18,7 +18,7 @@ nav {
     align-items: center;
     justify-content: stretch;
     align-content: stretch;
-
+    width: 100%;
 }
 
 #banner{
@@ -63,6 +63,7 @@ nav a:hover {
 #article-grid{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
     font-size: 14px;
     margin: auto;
     justify-items: center;
@@ -73,7 +74,7 @@ nav a:hover {
 .article-card{
     border: 5px solid #28B5A2ff;
     box-shadow: 5px 5px 10px #6f7364;
-    color: #D38E1D;
+    color: black;
 }
 
 .article-card p{
@@ -82,8 +83,11 @@ nav a:hover {
     margin: 5px auto;
 }
 
+.article-card p a{
+    color: #6D35C6ff;
+}
+
 .article-img{
-    border: 5px solid #FFFFB7ff;
     box-shadow: 5px 5px 10px #6f7364;
     color: #D38E1D;
     width: 90%;
@@ -99,6 +103,7 @@ nav a:hover {
 }
 
 .topic-essay p{
+    line-height: 2em;
     font-size: 18px
 }
 
@@ -127,4 +132,18 @@ footer p a:hover {
 }
 footer .social img {
     padding-top: 15px;
+}
+
+/* Page 2 - The Struggle specific CSS */
+
+#hero-box{
+    font-size: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+#hero-image{
+    border: 5px solid #28B5A2ff;
+    width: 100%;
 }
