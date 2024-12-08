@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Slideshow Testing</title>
+</head>
+<body>
+    <!-- Container for the image gallery -->
+<div class="container">
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="images/hobbyist1_kenny_lauderdale.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="images/hobbyist2_vintage_computing_and_gaming.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="images/hobbyist3_nintendo_playstation.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="images/hobbyist5_ziggy_cashmere-lost_media_research_handbook.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="images/hobbyist6_private_collector_laserdisc.png" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="images/hobbyist7_music_preserved_uk.jpg" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+    <!-- Image text -->
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist1_icon.png" style="width:100%" onclick="currentSlide(1)" alt="video-documents obscure, undervalued or lost Anime">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist2_icon.jpg" style="width:100%" onclick="currentSlide(2)" alt="A private game collection of an anonymous collector, circa 2006">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist3_icon.jpg" style="width:100%" onclick="currentSlide(3)" alt="Terry Diebold (Left) who discovered and funded the restoration of the only known prototype of the Nintendo Playstation">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist5_icon.png" style="width:100%" onclick="currentSlide(4)" alt="Ziggy Cashmere, author of the 'The Lost Media and Research Handbook'">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist6_icon.png" style="width:100%" onclick="currentSlide(5)" alt="A Private collector's Laserdisc collection">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="images/hobbyist7_icon.jpg" style="width:100%" onclick="currentSlide(6)" alt="Music Preserved, a UK based foundation specializing in preserving live performances">
+      </div>
+    </div>
+  </div>
+
+<!-- JAVA SCRIPT BELOW -->
+<script>
+      let slideIndex = 1;
+  showSlides(slideIndex);
+
+  // Next/previous controls
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+
+  // Thumbnail image controls
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
+</body>
+</html>
