@@ -35,7 +35,7 @@ nav a {
     height: 75%;
     width: 30%;
     align-self: center;
-    padding-top: 50px;
+    padding: 50px;
 }
 
 nav a:hover {
@@ -51,10 +51,11 @@ nav a:hover {
 
 .logo {
     width: 200px;
+    padding-right: 10px;
 }  
 
 #content{
-    max-width: 1600px;
+    max-width: 1300px;
     margin: 0 auto;
 }
 
@@ -109,7 +110,7 @@ nav a:hover {
 
 footer{
     background-color: #28B5A2ff;
-    color: #6D35C6ff;
+    color: #FFFFB7ff;
     padding: 25px 50px;
     margin-top: 25px;
     display: flex;
@@ -117,7 +118,7 @@ footer{
     align-items: center;
 }
 footer a {
-    color: #6D35C6ff;
+    color: #FFFFB7ff;
     text-decoration: none;
 }
 footer a:hover {
@@ -162,6 +163,9 @@ footer .social img {
   /* Position the image container (needed to position the left and right arrows) */
   .container {
     position: relative;
+    padding-top: 50px;
+    padding-right: 10%;
+    padding-left: 10%;
   }
   
   /* Hide the images by default */
@@ -181,8 +185,8 @@ footer .social img {
     position: absolute;
     top: 40%;
     width: auto;
-    padding: 16px;
-    margin-top: -50px;
+    padding-left: 10px;
+    margin-top: -30px;
     color: white;
     font-weight: bold;
     font-size: 20px;
@@ -193,8 +197,9 @@ footer .social img {
   
   /* Position the "next button" to the right */
   .next {
-    right: 0;
+    right: 10%;
     border-radius: 3px 0 0 3px;
+    padding-right: 10px;
   }
   
   /* On hover, add a black background color with a little bit see-through */
@@ -219,6 +224,7 @@ footer .social img {
     padding: 2px 16px;
     color: white;
   }
+
   
   .row:after {
     content: "";
