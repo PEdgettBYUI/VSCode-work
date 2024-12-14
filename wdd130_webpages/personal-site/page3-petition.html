@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="styles/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Our Petition For Change | EPAM</title>
 </head>
 <body>
-    <div id="content">
         <header>
             <a id="logo_link">
                 <img class="logo" src="images/epam_logo_r1.png" alt="Electronic Preservation of All Media">
@@ -17,18 +17,19 @@
                 <a href="page3-petition.html">Petition for Change</a>
             </nav>
         </header>        
-    </div>
+    <div id="content">
 
-    <main class="petition-form">
+    <main class="petition">
         <div id="form-grid">
             <p>The law is set against consumers, taking what media you think you own away from you. Corporations actively lobby against preservation for their own interests, and the government enforces outdated copyright laws that fine and imprison hobbists who they deem have violated the law.</p>
             <p>Sign our petition, show the FTC that we want whats ours, that our money isn't being wasted on a license that can be ripped away from you at a whim.</p>
+            <hr>
             <p>SIGN NOW!</p>
         </div>
 
-        <img class="article3-img" src="images/rsz_percentage_of_available_vg_vghf.png" alt="Article 3 Image">
+        <img class="stat-image" src="images/rsz_percentage_of_available_vg_vghf.png" alt="Chart showing only 13% of all video games made are available at any given time.">
 
-        <div id="feedback"></div>
+        <div id="petition-form">
             <form action="/my-handling-form-page" method="post">
                 <p>
                     <label for="name">Name:</label>
@@ -38,14 +39,14 @@
                     <label for="mail">Email:</label>
                     <input type="email" id="mail" name="user_email" />
                 </p>
-                <p>
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" name="user_message"></textarea>
-                </p>
                 <p class="button">
-                    <button type="submit">Send your message</button>
+                    <button type="submit">Sign</button>
                 </p>
             </form>
+    
+        </div>
+    </div>
+
         <footer>
             <p>Electronic Preservation of All Media &copy; 2024 - Patrick T. Edgett</p>
             <p><a href="site-plan.html">Site Plan</a></p>
@@ -62,6 +63,8 @@
             </div>
         </footer>
     </main>
+
+
     <script>
         // get the feedback div element so we can do something with it.
         const feedbackElement = document.getElementById('feedback');
@@ -72,7 +75,7 @@
             // stop the form from doing the default action.
             e.preventDefault();
             // set the contents of our feedback element to a message letting the user know the form was submitted successfully. Notice that we pull the name that was entered in the form to personalize the message!
-            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your message. We will get back with you as soon as possible!';
+            feedbackElement.innerHTML = 'Hello '+ formElement.user_name.value +'! Thank you for your support! Lets change the world!';
             // make the feedback element visible.
             feedbackElement.style.display = "block";
             // add a class to move everything down so our message doesn't cover it.
