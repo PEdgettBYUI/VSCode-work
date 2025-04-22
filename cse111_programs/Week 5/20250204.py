@@ -1,9 +1,4 @@
-# # Defining a function with a arbitrary number of arguements
-# # *args - The * will allow you to do this
-# # Turning the arguements into a list
-
-# def say_howdy(*names):
-#     print(f"Howdy ", end="")
+# # Defining"Howdy ", end="")
 #     for name in names:
 #         print(name, "", end="")
 #         print()
@@ -17,7 +12,7 @@
 
 
 # ChatGPT Slop-work
-# Does basic Math
+# Does basic Math using functions
 def doArithmetic(num1, num2, operation):
     if operation == 'add':
         return num1 + num2
@@ -39,6 +34,34 @@ print(doArithmetic(10, 5, 'multiply'))  # Output: 50
 print(doArithmetic(10, 5, 'divide'))    # Output: 2.0
 print(doArithmetic(10, 0, 'divide'))    # Output: Error: Division by zero is not allowed.
 print(doArithmetic(10, 5, 'modulus'))   # Output: Error: Invalid operation.
+
+
+#Does the same thing as "doArtihmetic() but only with lambdas"
+# Lambda functions
+add_numbers = lambda a, b: a + b
+subtract_numbers = lambda a, b: a - b
+multiply_numbers = lambda a, b: a * b
+divide_numbers = lambda a, b: a / b if b != 0 else "Error: Division by zero is not allowed."
+
+# Non-lambda function using the lambda functions
+def do_arithmetic(num1, num2, operation):
+    if operation == 'add':
+# # return a function with a arbitrary number of arguements
+# # *args - The * will allow you to do this
+# # Turning the arguements into a list
+
+# def say_howdy(*names):
+#     print(fn add_numbers(num1, num2)
+    elif operation == 'subtract':
+        return subtract_numbers(num1, num2)
+    elif operation == 'multiply':
+        return multiply_numbers(num1, num2)
+    elif operation == 'divide':
+        return divide_numbers(num1, num2)
+    else:
+        return "Error: Invalid operation."
+    
+
 
 
 # Filter - filter based on a condition
@@ -94,3 +117,42 @@ print(square(4))  # Output: 16 (4^2)
 print(cube(3))    # Output: 27 (3^3)
 
 
+
+def transform_string(s, func):
+    return func(s)
+
+# Example usage
+# While Lambdas cannot use functions like print() they can still use methods
+# This is because methods return/be expressed as a single value
+to_uppercase = lambda s: s.upper()
+result = transform_string("hello", to_uppercase)
+print(result)  # Output: HELLO
+
+
+
+
+# Appends lambda function results to a list
+def apply_functions(s, funcs):
+    results = []
+    for func in funcs:
+        results.append(func(s))
+    return results
+
+# Example usage
+to_uppercase = lambda s: s.upper()
+# NOTE: Reverses the string using Python Slicing
+reverse_string = lambda s: s[::-1]
+functions = [reverse_string]
+
+results = apply_functions("hellomybaby", functions)
+print(results)  # Output: ['HELLO', 'olleh']
+
+# Below can be used to Slice a specific segment to reverse
+print('hellomybaby'[:3][::-1])
+
+# Both below will print the truncated text from index 0 to 3
+print('hellomybaby'[0:3])
+print('hellomybaby'[:3])
+
+# Takes the string after the stop point and reverses it
+print('hellomybaby'[:3:-1])

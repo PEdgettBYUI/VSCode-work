@@ -1,3 +1,4 @@
+# Implement Lambda into the "definitions"
 def add(a, b):
     return a + b
 
@@ -25,6 +26,15 @@ def factorial(n):
 
 
 def calculator():
+    # lambdas are defined like a variable and called like a function
+    # i.e. lambda INPUTS : "MATH"; Return "MATH" result
+    # NOTE: Lambdas cannot contain functions
+    add = lambda a,b: a+b
+    subtract = lambda a,b: a-b
+    multiply = lambda a,b: a*b
+    divide = lambda a,b: a/b
+    exponent = lambda a,b: a**b
+
 
     while True:
         print("Calculator 5-BILLION")
@@ -48,18 +58,30 @@ def calculator():
             num2 = float(input("Enter the second number: "))
 
         if choice == 1:
+            add(num1, num2)
             print(f"{num1} + {num2} = {add(num1, num2)}")
+
         elif choice == 2:
+            subtract(num1, num2)
             print(f"{num1} - {num2} = {subtract(num1, num2)}")
         elif choice == 3:
+
+            multiply(num1, num2)
             print(f"{num1} * {num2} = {multipy(num1, num2)}")
         elif choice == 4:
+
+            divide(num1, num2)
             print(f"{num1} / {num2} = {divide(num1, num2)}")
         elif choice == 5:
+
+            exponent(num1, num2)
+
             print(f"{num1} ^ {num2} = {exponent(num1, num2)}")
         
         elif choice == 6:
             num_f = int(input("Enter a whole number: "))
             print(f"{num_f}! = {factorial(num_f)}")
+
+        print()
         
 calculator()
